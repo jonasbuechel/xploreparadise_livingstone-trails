@@ -9,14 +9,31 @@
     }}
   {{/c-video}}
 
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-6">1</div>
-      <div class="col-xs-6">2</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-6">1</div>
-      <div class="col-xs-6">2</div>
-    </div>
-  </div>
+  {{#c-section classNames="c-section--text-center"}}
+      <h2>{{model.section1.title}}</h2>
+      <p>{{model.section1.p1}}</p>
+      <p>{{model.section1.p2}}</p>
+      <p>{{model.section1.p3}}</p>
+      <p>{{model.section1.p4}}</p>
+  {{/c-section}}
+
+  {{#c-section classNames="c-section--text-center"}}
+      <h2>{{model.section2.title}}</h2>
+      <p>{{model.section2.p1}}</p>
+      <p>{{model.section2.quotation1}}</p>
+      <p>{{model.section2.quotation2}}</p>
+      <p>{{model.section2.author}} {{model.section2.authorDescription}}</p>
+  {{/c-section}}
+
+  {{#c-section classNames="c-section--text-center"}}
+      <p>{{model.section3.p1}}</p>
+  {{/c-section}}
+
+  {{#c-section classNames="c-section--text-center"}}
+      <h2>{{model.section4.title}}</h2>
+      <p>{{model.section4.p1}}</p>
+      <p>{{model.section4.p2}}</p>
+      <p>{{model.section4.p3}}</p>
+  {{/c-section}}
+
 {{/l-default}}
