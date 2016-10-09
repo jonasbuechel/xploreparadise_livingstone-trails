@@ -1,9 +1,10 @@
 <h1>INDEX PAGE</h1>
-{{ember-youtube
-  classNames="c-video c-video--fullpage"
-  ytid="V2VkGY-DMKE"
-  playerVars=youtubeIntroPlayerVars
-  showDebug=false
-  showControls=false
-  showProgress=false
-}}
+{{#c-video classNames="c-video--fullpage"}}
+  {{ember-youtube
+    ytid="V2VkGY-DMKE"
+    playerVars=youtubeIntroPlayerVars
+    showDebug=false
+    showControls=false
+    showProgress=false
+  }}
+{{/c-video}}
