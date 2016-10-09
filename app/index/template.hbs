@@ -1,18 +1,22 @@
-{{#c-video classNames="c-video--fullpage"}}
-  {{ember-youtube
-    ytid="V2VkGY-DMKE"
-    playerVars=youtubeIntroPlayerVars
-    showDebug=false
-    showControls=false
-    showProgress=false
-  }}
-{{/c-video}}
+{{#l-default}}
+  {{#c-video classNames="c-video--fullpage"}}
+    {{ember-youtube
+      ytid="V2VkGY-DMKE"
+      playerVars=youtubeIntroPlayerVars
+      showDebug=false
+      showControls=false
+      showProgress=false
+    }}
+  {{/c-video}}
 
-<div class="row">
-  <div class="col-xs-6">1</div>
-  <div class="col-xs-6">2</div>
-</div>
-<div class="row">
-  <div class="col-xs-6">1</div>
-  <div class="col-xs-6">2</div>
-</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">1</div>
+      <div class="col-xs-6">2</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">1</div>
+      <div class="col-xs-6">2</div>
+    </div>
+  </div>
+{{/l-default}}
