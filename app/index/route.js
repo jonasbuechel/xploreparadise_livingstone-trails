@@ -27,6 +27,6 @@ export default Ember.Route.extend({
         p2: 'Follow Xploreparadise on Instagram and Facebook and discover the story behind the images, what happened each day of my adventure and learn some interesting facts about David Livingstone and the Kalahari wildlife.',
         p3: 'Share the pictures and videos with your friends and become a part of this incredible adventure.'
       }
-    }
+    };
   }
 });
