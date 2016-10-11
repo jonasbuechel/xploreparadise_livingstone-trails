@@ -9,8 +9,11 @@
     }}
   {{/c-video}}
 
+  {{c-separator isBig=true isDark=true}}
+
   {{#c-section classNames="c-section--text-center"}}
       <h2>{{model.trail.title}}</h2>
+      {{c-separator}}
       <p>{{model.trail.p1}}</p>
       <p>{{model.trail.p2}}</p>
       <p>{{model.trail.p3}}</p>
@@ -19,6 +22,7 @@
 
   {{#c-section classNames="c-section--text-center"}}
       <h2>{{model.kalahari.title}}</h2>
+      {{c-separator}}
       <p>{{model.kalahari.p1}}</p>
       <p>{{model.kalahari.quotation1}}</p>
       <p>{{model.kalahari.quotation2}}</p>
@@ -28,6 +32,8 @@
   {{#c-section classNames="c-section--text-center"}}
       <p>{{model.kalahariGeographics.p1}}</p>
   {{/c-section}}
+
+  {{c-separator sizeBig=true}}
 
   {{#c-section classNames="c-section--text-center"}}
       <h2>{{model.work.title}}</h2>
