@@ -1,0 +1,14 @@
+.c-separator{
+  margin: 1em auto;
+  height: 0;
+  width: 3em;
+  border-top: solid 2px $color-grey;
+}
+
+.c-separator--big{
+  width: 100%;
+}
+
+.c-separator--dark{
+  border-top-color: $color-grey-dark;
+}
