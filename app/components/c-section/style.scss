@@ -1,7 +1,13 @@
 .c-section{
-  
 }
 
 .c-section--text-center{
   text-align: center;
+}
+
+.c-section--in-progress{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em 0;
+  border: 1px dashed $color-bright;
 }
