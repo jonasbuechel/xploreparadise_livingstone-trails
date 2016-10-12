@@ -12,6 +12,15 @@
   border: 1px dashed $color-bright;
 }
 
-.c-section[backgroundimage]{
-  background: red;
+//Background settings
+.c-section[style]{
+  background-repeat: no-repeat;
+}
+
+.c-section--background-contain{
+  background-size: contain;
+}
+
+.c-section--background-right-top{
+  background-position: right top;
 }
