@@ -1,3 +1,4 @@
 # http://www.robotstxt.org
 User-agent: *
-Disallow:
+#Disallow for all files and folders
+Disallow: /
