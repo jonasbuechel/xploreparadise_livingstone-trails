@@ -9,7 +9,7 @@ export default Ember.Component.extend({
   backgroundStyleCode: Ember.computed('backgroundimage', function(){
     let backgroundimage = this.get('backgroundimage');
     if(backgroundimage){
-      return `background-image:url("${backgroundimage}")`;
+      return `background-image:url("/assets/${backgroundimage}")`;
     }
   }),
   classNameBindings: ['isInProgress:c-section--in-progress', 'isConstrained:container'],

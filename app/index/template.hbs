@@ -23,13 +23,13 @@
 
   {{#c-section 
       classNames="c-section--background-contain c-section--background-right-top"
-      backgroundimage="/assets/img_portrait_xploreparadise_livingstone.jpg"
+      backgroundimage="img_portrait_xploreparadise_livingstone.jpg"
       isInProgress=true
       isConstrained=false
   }}
     <div class="container">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-8">
           <div>
             svg<br />
             ...<br />
@@ -46,6 +46,8 @@
           </div>
           <h2>{{model.explorer.h2}}</h2>
           <h3>{{model.explorer.h3}}</h3>
+        </div>
+        <div class="col-sm-7"> 
           <p>{{model.explorer.p1}}</p>
           <p>{{model.explorer.p2}}</p>
           <p>{{model.explorer.p3}}</p>
@@ -59,9 +61,17 @@
       <h2>{{model.kalahari.title}}</h2>
       {{c-separator}}
       <p>{{model.kalahari.p1}}</p>
+  {{/c-section}}
+
+  {{#c-section 
+    classNames="font--handwritten"
+    backgroundimage="img_desert_xploreparadise_kalahari_botswana_plants.jpg"
+  }}
+    <blockquote>
       <p>{{model.kalahari.quotation1}}</p>
       <p>{{model.kalahari.quotation2}}</p>
       <p>{{model.kalahari.author}} {{model.section2.authorDescription}}</p>
+    </blockquote>
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
