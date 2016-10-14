@@ -1,1 +1,7 @@
-{{yield}}
+{{#if isConstrainedInside}}
+  <div class="container">
+    {{yield}}
+  </div>
+{{else}}
+    {{yield}}
+{{/if}}

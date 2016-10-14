@@ -4,6 +4,7 @@ export default Ember.Component.extend({
   tagName: 'section',
   classNames: ['c-section'],
   isConstrained: false,
+  isConstrainedInside: false,
   isInProgress: false,
   backgroundimage: false,
   backgroundStyleCode: Ember.computed('backgroundimage', function(){
