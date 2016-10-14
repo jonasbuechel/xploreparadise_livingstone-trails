@@ -1,8 +1,40 @@
+html,
 body{
-  font-size: 14px;
+  font-size: 17px;
+  line-height: 1.29;
   font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6{
   font-family: 'Oswald', sans-serif;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 5rem;
+}
+
+h2{
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+
+h3{
+  font-size: 2.5rem;
+}
+
+h4{
+  font-size: 2rem;
+}
+
+h5{
+  font-size: 1.5rem;
+}
+
+h6{
+  font-size: 1.25rem;
+}
+
+.font--handwritten{
+  font-family: 'Ruthie', serif;
 }
