@@ -1,12 +1,20 @@
+/* FONT STACK */
+
+$font-primary: 'Raleway', sans-serif;
+$font-headings: 'Oswald', sans-serif;
+$font-handwritten: 'Ruthie', serif;
+
+/* DEFAULT DEFINITIONS */
+
 html,
 body{
   font-size: 17px;
   line-height: 1.29;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font-primary;
 }
 
 h1, h2, h3, h4, h5, h6{
-  font-family: 'Oswald', sans-serif;
+  font-family: $font-headings ;
 }
 
 h1{
@@ -33,8 +41,4 @@ h5{
 
 h6{
   font-size: 1.25rem;
-}
-
-.font--handwritten{
-  font-family: 'Ruthie', serif;
 }
