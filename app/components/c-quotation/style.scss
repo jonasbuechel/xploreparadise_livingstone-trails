@@ -1,0 +1,21 @@
+.c-quotation{
+  
+  padding: 3em 0;
+
+  border:none;
+
+  &__paragraph{
+    font-family: $font-handwritten;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+  &__author{
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  &__author-description{
+    font-size: 0.66em;
+  }
+}

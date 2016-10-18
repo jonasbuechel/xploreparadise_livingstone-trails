@@ -21,8 +21,9 @@ export default Ember.Route.extend({
       kalahari: {
         title: 'THE MIGHTY KALAHARI DESERT',
         p1: 'There might be no better description of the Kalahari than the words of David Livingstone himself:',
-        quotation1: '“Before narrating the incidents of this journey, I may give some account of the great Kalahari Desert, in order that the reader may understand in some degree the nature of the difficulties we had to encounter…',
-        quotation2: '...It is by no means destitute of vegetation and inhabitants, for it is covered with grass and a great variety of creeping plants; besides which there are large patches of bushes, and even trees. It is remarkably flat, but intersected in different parts by the beds of ancient rivers; and prodigious herds of certain antelopes, which require little or no water, roam over the trackless plains.”',
+        quotationTexts: [
+          '“Before narrating the incidents of this journey, I may give some account of the great Kalahari Desert, in order that the reader may understand in some degree the nature of the difficulties we had to encounter…',
+          '...It is by no means destitute of vegetation and inhabitants, for it is covered with grass and a great variety of creeping plants; besides which there are large patches of bushes, and even trees. It is remarkably flat, but intersected in different parts by the beds of ancient rivers; and prodigious herds of certain antelopes, which require little or no water, roam over the trackless plains.”'],
         author: 'Dr David Livingstone', 
         authorDescription: '(Missionary Travels and Researches in South Africa, Chapter II)'
       },

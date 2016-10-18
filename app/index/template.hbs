@@ -1,4 +1,5 @@
 {{#l-default}}
+  {{!--
   {{#c-video classNames="c-video--fullpage"}}
     {{ember-youtube
       ytid="V2VkGY-DMKE"
@@ -55,22 +56,23 @@
       </div>
     </div>
   {{/c-section}}
-
+--}}
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
       <h2>{{model.kalahari.title}}</h2>
       {{c-separator}}
       <p>{{model.kalahari.p1}}</p>
   {{/c-section}}
 
-  {{#c-section 
+  {{#c-section
+    classNames="c-section--background-center-top c-section--background-cover"
     backgroundimage="img_desert_xploreparadise_kalahari_botswana_plants.jpg"
     isConstrainedInside="true"
   }}
-    <blockquote>
-      <p>{{model.kalahari.quotation1}}</p>
-      <p>{{model.kalahari.quotation2}}</p>
-      <p>{{model.kalahari.author}} {{model.section2.authorDescription}}</p>
-    </blockquote>
+    {{c-quotation
+      quotationTexts=model.kalahari.quotationTexts
+      author=model.kalahari.author 
+      authorDescription=model.kalahari.authorDescription
+    }}
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}

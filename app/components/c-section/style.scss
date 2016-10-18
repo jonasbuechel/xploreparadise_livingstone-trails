@@ -21,6 +21,14 @@
   background-size: contain;
 }
 
+.c-section--background-cover{
+  background-size: cover;
+}
+
 .c-section--background-right-top{
   background-position: right top;
+}
+
+.c-section--background-center-top{
+  background-position: center top;
 }
