@@ -1,7 +1,38 @@
 .c-video-teaser{
+  
+  margin: 15px 0;
+  
+  &:hover{
+    text-decoration: none;
+  }
+  
   &__background{
+    position: relative;
     background-size: cover;
     background-position: center top;
     min-height: 11em;
+    color: $color-bright;
+  }
+  
+  &__text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: .8rem;
+  }
+  
+  &__title{
+    font-size: 1.8rem;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  
+  &__subtitle{
+    font-size: 0.9rem;
+    margin: 0.1em 0 0 0;
+    padding: 0;
   }
 }
