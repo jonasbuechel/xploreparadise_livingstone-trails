@@ -6,13 +6,6 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     sassOptions: {
       includePaths: ['app']
-    },
-    'ember-cli-staticboot': {
-      paths: [
-        '/'
-      ],
-      appendFileExtension: true,
-      includeClientScripts: false
     }
   });
 
