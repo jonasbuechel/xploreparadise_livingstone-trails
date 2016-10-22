@@ -1,9 +1,16 @@
 {{#l-default}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=false isInProgress=true}}
-    {{#each model.mainGallery.items as |galleryItem|}}
-      {{galleryItem.src}}
-    {{/each}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+    <div class="row">
+      {{#photo-swipe items=model.mainGallery.items as |img|}}
+        <img 
+          width=200 
+          class="col-xs-4 col-sm-3 col-md-2 col-lg-2 spacing-vertical--grid-gutter" 
+          src={{img.msrc}} 
+          alt={{img.title}}
+        />
+      {{/photo-swipe}}
+    </div>
   {{/c-section}}
 
 {{/l-default}}
