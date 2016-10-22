@@ -101,32 +101,17 @@
 
   {{#c-section isConstrained=true isInProgress=true}}
     <div class="row">
-      {{c-video-teaser 
-        backgroundimage="img_video_cheetahs.jpg" 
-        classNames="col-xs-6 col-sm-6 col-md-3" 
-        title="Cheethas" 
-        subtitle="With the meercats"
-      }}
       
-      {{c-video-teaser
-        backgroundimage="img_video_meerkats.jpg"
-        classNames="col-xs-6 col-sm-6 col-md-3" 
-        title="The guardian" 
-        subtitle="With the meercats"}}
-      
-      {{c-video-teaser 
-        backgroundimage="img_video_elephants.jpg"
-        classNames="col-xs-6 col-sm-6 col-md-3" 
-        title="At the water hole" 
-        subtitle="Cheethas"
-      }}
-      
-      {{c-video-teaser 
-        backgroundimage="img_video_springboks.jpg"
-        classNames="col-xs-6 col-sm-6 col-md-3" 
-        title="At the water hole" 
-        subtitle="Cheethas"
-      }}
+      {{#each model.videoTeasers as |video|}}
+        {{c-video-teaser 
+          youtubeId = video.youtubeId
+          showVideo = (action "openYouTubeModal")
+          backgroundimage = video.backgroundimage
+          classNames="col-xs-6 col-sm-6 col-md-3" 
+          title = video.title
+          subtitle = video.subtitle
+        }}
+      {{/each}}
       
     </div>
   {{/c-section}}
