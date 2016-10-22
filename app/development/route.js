@@ -4,8 +4,8 @@ export default Ember.Route.extend({
   mainGalleryItems: Ember.computed(function() {
 
     let   imagesToReturn              = [];
-    const mainGalleryRootPath         = 'assets/mainGallery/fullsize/';
-    const mainGalleryThumbnailsPath   = 'assets/mainGallery/thumbnails/';
+    const mainGalleryRootPath         = '/assets/mainGallery/fullsize/';
+    const mainGalleryThumbnailsPath   = '/assets/mainGallery/thumbnails/';
     const mainGalleryImageWidth       = 1200;
     const mainGalleryImageHeight      = 800;
     
