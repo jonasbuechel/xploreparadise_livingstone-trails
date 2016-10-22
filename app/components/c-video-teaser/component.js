@@ -7,7 +7,6 @@ export default Ember.Component.extend({
   srcComplete: 'bla',
   title: false,
   subtitle: false,
-  href: 'href1',
   backgroundimage: false,
   backgroundStyleCode: Ember.computed('backgroundimage', function(){
     let backgroundimage = this.get('backgroundimage');
@@ -15,5 +14,9 @@ export default Ember.Component.extend({
       return `background-image:url("/assets/${backgroundimage}")`;
     }
   }),
-  attributeBindings: ['href','title']
+  attributeBindings: ['title'],
+  click(){
+    let youtubeId = this.get('youtubeId');
+    this.get('showVideo')(youtubeId);
+  }
 });
