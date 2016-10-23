@@ -1,11 +1,14 @@
 import Ember from 'ember';
+import config from '../../config/environment';
 
 export default Ember.Component.extend({
   name:'',
   email:'',
   subject:'',
   message:'',
-  
+  showError: false,
+  showSuccess: false,
+  ajax: Ember.inject.service(),
   actions: {
     submitContactForm(){
       let formData = {
@@ -15,21 +18,23 @@ export default Ember.Component.extend({
         message:  this.get('message'),
       };
       
-      console.dir(formData);
+      const ajaxService = this.get('ajax');
+      const requestEndpoint = config.APP.contactForm.endpoint;
+            
+      return ajaxService.request(requestEndpoint, {
+        method: 'POST',
+        headers: {
+          accept: 'text/html'
+        },
+        data: formData
+      }).then(response => {
+        this.set('showSuccess', true);
+      }).catch(error => {
+        this.set('showError', true);
+        console.log(error);
+      });
 
     }
   }
   
 });
-
-
-
-/*
-target:
-
-name:Jonas Büchel
-email:jonas.buechel@gmail.com
-subject:huballa huballa
-message:mussma dein form testen ;-)
-
-*/

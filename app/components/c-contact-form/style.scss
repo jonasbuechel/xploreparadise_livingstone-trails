@@ -32,11 +32,31 @@ $c-contact-form-textarea-height: (3*$c-contact-form-element-height) + (2*$c-cont
     width: $c-contact-form-element-width;
     height: $c-contact-form-element-height;
     padding: $c-contact-form-element-spacing-inside;
+    margin-bottom: $c-contact-form-element-spacing-bottom;
         
     &:hover{
       background: $color-sand;
       color:$color-sand-bright;
       border-color: $color-sand-bright;
     }
+  }
+  
+  &__feedback{
+    
+  }
+  &__message{
+    padding: $c-contact-form-element-spacing-inside;
+    border: 2px solid;
+    text-align: center;
+  }
+  
+  &__message--success{
+    border-color: $color-notification-success;
+    color: $color-notification-success;
+  }
+  &__message--error{
+    border-color: $color-notification-error;
+    color: $color-notification-error;
+        
   }
 }

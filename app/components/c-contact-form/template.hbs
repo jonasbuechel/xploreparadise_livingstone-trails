@@ -1,4 +1,4 @@
-<form class="c-contact-form" {{action "submitContactForm" on="submit"}}>
+<form class="c-contact-form row" {{action "submitContactForm" on="submit"}}>
     <div class="col-xs-6">
       {{input value=name placeholder="NAME" required=true classBinding=":c-contact-form__input-text"}}
       {{input value=email placeholder="E-MAIL" required=true classBinding=":c-contact-form__input-text"}}
@@ -9,5 +9,13 @@
     </div>
     <div class="col-xs-12">
         <button class="c-contact-form__submit" type="submit" name="submit" {{action "submitContactForm"}}>SEND EMAIL</button>
+    </div>
+    <div class="c-contact-form__feedback col-xs-12">
+      {{#if showError}}
+        <p class="c-contact-form__message c-contact-form__message--error">Ooops, sorry! Something went wrong. Please try again later...</p>
+      {{/if}}
+      {{#if showSuccess}}
+        <p class="c-contact-form__message c-contact-form__message--success">Thank You! Your email has been delivered.</p>
+      {{/if}}
     </div>
 </form>
