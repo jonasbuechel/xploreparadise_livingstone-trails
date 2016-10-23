@@ -1,0 +1,42 @@
+$c-contact-form-element-width: 100%;
+$c-contact-form-element-height: 3.5em;
+$c-contact-form-element-spacing-bottom: 1em;
+$c-contact-form-element-spacing-inside: 1em;
+$c-contact-form-element-border: none;
+$c-contact-form-textarea-height: (3*$c-contact-form-element-height) + (2*$c-contact-form-element-spacing-bottom);
+
+
+.c-contact-form{
+  
+  font-family: $font-headings;
+  font-weight: normal;
+  color:$color-grey;
+  
+  &__input-text,
+  &__input-textarea{
+    background: $color-bright;
+    width: $c-contact-form-element-width;
+    height: $c-contact-form-element-height;
+    margin-bottom: $c-contact-form-element-spacing-bottom;
+    padding: $c-contact-form-element-spacing-inside;
+    border: $c-contact-form-element-border;
+  }
+
+  &__input-textarea{
+    height: $c-contact-form-textarea-height;
+  }
+  &__submit{
+    background: $color-sand-bright;
+    color:$color-dark;
+    border: 2px solid $color-sand;
+    width: $c-contact-form-element-width;
+    height: $c-contact-form-element-height;
+    padding: $c-contact-form-element-spacing-inside;
+        
+    &:hover{
+      background: $color-sand;
+      color:$color-sand-bright;
+      border-color: $color-sand-bright;
+    }
+  }
+}

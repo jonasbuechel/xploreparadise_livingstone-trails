@@ -1,0 +1,13 @@
+<form class="c-contact-form" {{action "submitContactForm" on="submit"}}>
+    <div class="col-xs-6">
+      {{input value=name placeholder="NAME" required=true classBinding=":c-contact-form__input-text"}}
+      {{input value=email placeholder="E-MAIL" required=true classBinding=":c-contact-form__input-text"}}
+      {{input value=subject placeholder="SUBJECT" required=true classBinding=":c-contact-form__input-text"}}
+    </div>
+    <div class="col-xs-6">
+       {{textarea value=message placeholder="MESSAGE" required=true classBinding=":c-contact-form__input-textarea"}}
+    </div>
+    <div class="col-xs-12">
+        <button class="c-contact-form__submit" type="submit" name="submit" {{action "submitContactForm"}}>SEND EMAIL</button>
+    </div>
+</form>
