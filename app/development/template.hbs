@@ -1,19 +1,10 @@
 {{#l-default}}
 
   {{#c-section 
-      classNames="c-section--text-center c-section--background-cover c-section--background-center-top"
-      backgroundimage="img_portrait_xploreparadise_christoph_taenzer.jpg"
       isInProgress=true
-      isConstrained=false
+      isConstrained=true
   }}
-    <div class="container spacing-vertical--8lines">
-      <div class="row">
-        <p 
-           class="c-typography--italic col-xs-12 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-8">
-          {{model.about.p2}}
-        </p>
-      </div>
-    </div>
+     {{c-contact-form}}
   {{/c-section}}
 
 {{/l-default}}
