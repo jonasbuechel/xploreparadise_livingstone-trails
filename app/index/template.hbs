@@ -152,8 +152,11 @@
     </div>
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-    <h2>GET IN TOUCH</h2>
+  {{#c-section 
+      isInProgress=true
+      isConstrained=true
+  }}
+     {{c-contact-form}}
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
