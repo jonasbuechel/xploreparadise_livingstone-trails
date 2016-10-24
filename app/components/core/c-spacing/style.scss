@@ -17,3 +17,16 @@
     &--10lines{ margin-top:10em; margin-bottom: 10em;}
   }
 }
+
+.spacing--min-height{
+  &-10vh{min-height: 10vh}
+  &-20vh{min-height: 20vh}
+  &-30vh{min-height: 30vh}
+  &-40vh{min-height: 40vh}
+  &-50vh{min-height: 50vh}
+  &-60vh{min-height: 60vh}
+  &-70vh{min-height: 70vh}
+  &-80vh{min-height: 80vh}
+  &-90vh{min-height: 90vh}
+  &-100vh{min-height: 100vh}
+}
