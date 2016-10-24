@@ -52,7 +52,10 @@ h4{
 }
 
 /* STYLES */
-
-.c-typography--italic{
-  font-style: italic;
+h1,h2,h3,h4,*{
+  &.c-typography{
+    &--italic{font-style: italic;}
+    &--uppercase{text-transform: uppercase};
+    &--lowercase{text-transform: lowercase};
+  }
 }
