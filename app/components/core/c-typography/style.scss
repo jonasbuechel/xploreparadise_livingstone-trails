@@ -13,6 +13,15 @@ body{
   font-family: $font-primary;
 }
 
+a{
+  color:$color-sand;
+  
+  &:hover{
+    color:$color-soil;
+    text-decoration: none;
+  }
+}
+
 h1, h2, h3, h4, h5, h6{
   font-family: $font-headings ;
 }
