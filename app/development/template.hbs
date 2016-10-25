@@ -1,7 +1,25 @@
 {{#l-default}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-     {{c-special-thanks model=model}}
+    <p>{{model.equipment.p1}}</p>
+    {{#slick-carousel
+      class="ember-carousel"
+      autoplay=true
+      autoplaySpeed=3000
+      slidesToScroll=1
+      dots=false
+      fade=false
+      mobileFirst=true
+      responsive=model.equipment.responsiveSettings
+      
+    }}
+        <div><img src="http://placehold.it/300?text=Slide+1"></div>
+        <div><img src="http://placehold.it/300?text=Slide+2"></div>
+        <div><img src="http://placehold.it/300?text=Slide+3"></div>
+        <div><img src="http://placehold.it/300?text=Slide+4"></div>
+        <div><img src="http://placehold.it/300?text=Slide+5"></div>
+        <div><img src="http://placehold.it/300?text=Slide+6"></div>
+    {{/slick-carousel}}
   {{/c-section}}
 
 {{/l-default}}
