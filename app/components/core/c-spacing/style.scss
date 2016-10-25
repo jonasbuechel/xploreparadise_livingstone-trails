@@ -1,3 +1,29 @@
+@mixin generate-spaces-bottom {
+  &--1line{  margin-bottom:1em;}
+  &--2lines{ margin-bottom:2em;}
+  &--3lines{ margin-bottom:3em;}
+  &--4lines{ margin-bottom:4em;}
+  &--5lines{ margin-bottom:5em;}
+  &--6lines{ margin-bottom:6em;}
+  &--7lines{ margin-bottom:7em;}
+  &--8lines{ margin-bottom:8em;}
+  &--9lines{ margin-bottom:9em;}
+  &--10lines{ margin-bottom:10em;}
+}
+
+@mixin generate-spaces-top {
+  &--1line{  margin-top:1em;}
+  &--2lines{ margin-top:2em;}
+  &--3lines{ margin-top:3em;}
+  &--4lines{ margin-top:4em;}
+  &--5lines{ margin-top:5em;}
+  &--6lines{ margin-top:6em;}
+  &--7lines{ margin-top:7em;}
+  &--8lines{ margin-top:8em;}
+  &--9lines{ margin-top:9em;}
+  &--10lines{ margin-top:10em;}
+}
+
 .spacing{
   &-vertical{
     &--grid-gutter{
@@ -5,16 +31,13 @@
       margin-bottom: 15px;
     }
     
-    &--1line{  margin-top:1em; margin-bottom: 1em;}
-    &--2lines{ margin-top:2em; margin-bottom: 2em;}
-    &--3lines{ margin-top:3em; margin-bottom: 3em;}
-    &--4lines{ margin-top:4em; margin-bottom: 4em;}
-    &--5lines{ margin-top:5em; margin-bottom: 5em;}
-    &--6lines{ margin-top:6em; margin-bottom: 6em;}
-    &--7lines{ margin-top:7em; margin-bottom: 7em;}
-    &--8lines{ margin-top:8em; margin-bottom: 8em;}
-    &--9lines{ margin-top:9em; margin-bottom: 9em;}
-    &--10lines{ margin-top:10em; margin-bottom: 10em;}
+    @include generate-spaces-top;
+    @include generate-spaces-bottom;
+   
+  }
+  
+  &-bottom{
+     @include generate-spaces-bottom;
   }
 }
 
