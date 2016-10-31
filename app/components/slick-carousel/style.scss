@@ -2,4 +2,7 @@
   .slick-track{
     @include c-alignement--center-center
   }
-}
+  .slick-slide img{
+    margin: auto;
+  }
+} 
