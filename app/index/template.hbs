@@ -19,9 +19,9 @@
   {{c-separator isBig=true isDark=true}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-      <h2>{{model.trail.title}}</h2>
+      <h2>{{model.textContent.trail.title}}</h2>
       {{c-separator}}
-      {{c-text-blocks text=model.trail.text}}
+      {{c-text-blocks text=model.textContent.trail.text}}
   {{/c-section}}
 
 
@@ -47,20 +47,20 @@
             <br />
             <br />
           </div>
-          <h2>{{model.explorer.h2}}</h2>
-          <h3>{{model.explorer.h3}}</h3>
+          <h2>{{model.textContent.explorer.h2}}</h2>
+          <h3>{{model.textContent.explorer.h3}}</h3>
         </div>
         <div class="col-sm-7"> 
-          {{c-text-blocks text=model.explorer.text}}
+          {{c-text-blocks text=model.textContent.explorer.text}}
         </div>
       </div>
     </div>
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-      <h2>{{model.kalahari.title}}</h2>
+      <h2>{{model.textContent.kalahari.title}}</h2>
       {{c-separator}}
-      {{c-text-blocks text=model.kalahari.text}}
+      {{c-text-blocks text=model.textContent.kalahari.text}}
   {{/c-section}}
 
   {{#c-section
@@ -76,7 +76,7 @@
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-    {{c-text-blocks text=model.kalahariGeographics.text}}
+    {{c-text-blocks text=model.textContent.kalahariGeographics.text}}
     {{c-image
       src="img_african_symbol.png"
       is2x=true
@@ -86,8 +86,8 @@
   {{c-separator isBig=true}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-      <h2>{{model.work.title}}</h2>
-      {{c-text-blocks text=model.work.text}}
+      <h2>{{model.textContent.work.title}}</h2>
+      {{c-text-blocks text=model.textContent.work.text}}
   {{/c-section}}
 
   {{#c-section isConstrained=true isInProgress=true}}
@@ -122,9 +122,9 @@
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-    <h2>{{model.about.h2}}</h2>
-    <h3>{{model.about.h3}}</h3>
-    {{c-text-blocks text=model.about.text}}
+    <h2>{{model.textContent.about.h2}}</h2>
+    <h3>{{model.textContent.about.h3}}</h3>
+    {{c-text-blocks text=model.textContent.about.text}}
   {{/c-section}}
     
   {{#c-section 
@@ -163,13 +163,13 @@
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-    <h2>{{model.equipment.h2}}</h2>
-    {{c-text-blocks text=model.equipment.text}}
+    <h2>{{model.textContent.equipment.h2}}</h2>
+    {{c-text-blocks text=model.textContent.equipment.text}}
   {{/c-section}}
   
   <footer>
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-     {{c-text-blocks text=model.copyright.text}}
+     {{c-text-blocks text=model.textContent.copyright.text}}
   {{/c-section}}
   </footer>
 
