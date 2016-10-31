@@ -5,7 +5,7 @@
     {{c-text-blocks text=model.textContent.equipment.text}}
     
     {{#slick-carousel
-      class="ember-carousel"
+      class="slick-carousel slick-carousel--center-center spacing-vertical--2lines"
       autoplay=true
       autoplaySpeed=3000
       slidesToScroll=1
@@ -16,7 +16,7 @@
       
     }}
       {{#each model.equipmentSlider.sliderItems as |item|}}
-        <div>{{c-image src=item.src alt=item.alt}}</div>
+        {{c-carousel-item item=item}}
       {{/each}}
     {{/slick-carousel}}
   {{/c-section}}
