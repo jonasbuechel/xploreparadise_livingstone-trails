@@ -2,7 +2,7 @@
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
     
-    {{c-text-blocks text=model.equipment.text}}
+    {{c-text-blocks text=model.textContent.equipment.text}}
     
     {{#slick-carousel
       class="ember-carousel"
@@ -12,7 +12,7 @@
       dots=false
       fade=false
       mobileFirst=true
-      responsive=model.equipment.responsiveSettings
+      responsive=model.equipmentSlider.sliderSettings.responsiveSettings
       
     }}
         <div><img src="http://placehold.it/300?text=Slide+1"></div>
