@@ -12,7 +12,8 @@ export default Ember.Route.extend(mixinRouteMainGallery,mixinRouteEquipmentSlide
         items: this.get('mainGalleryItems')
       },
       textContent: this.get('textContent'),
-      videoTeasers: this.get('videoTeasers')
+      videoTeasers: this.get('videoTeasers'),
+      equipmentSlider: this.get('equipmentSlider')
     };
   }
 });
