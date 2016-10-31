@@ -7,28 +7,26 @@ export default Ember.Mixin.create({
         {
           breakpoint:1200,
           settings:{
-            slidesToShow:5,
-            infinite:true
+            slidesToShow:5
           }
         },
         {
           breakpoint:992,
           settings:{
-            slidesToShow:4,
-            infinite:true
+            slidesToShow:4
           }
         },
         {
           breakpoint:768,
           settings:{
-            slidesToShow:3,
-            dots:true}
+            slidesToShow:3
+          }
         },
         {
           breakpoint:320,
           settings:{
-            slidesToShow:2,
-            dots:true}
+            slidesToShow:2
+          }
         }
       ]
     },
