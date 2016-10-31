@@ -25,6 +25,44 @@ export default Ember.Mixin.create({
             dots:true}
         }
       ]
-    }
+    },
+    sliderItems: [
+      {
+        src: 'logo_blackmagic.png',
+        alt: 'Blackmagicdesign'
+      },
+      {
+        src: 'logo_b_w.png',
+        alt: 'B&W International'
+      },
+      {
+        src: 'logo_canon.png',
+        alt: 'Canon'
+      },
+      {
+        src: 'logo_cullmann.png',
+        alt: 'Cullmann'
+      },
+      {
+        src: 'logo_hama.png',
+        alt: 'hama'
+      },
+      {
+        src: 'logo_peli.png',
+        alt: 'PELI'
+      },
+      {
+        src: 'logo_sandisk.png',
+        alt: 'SanDisk'
+      },
+      {
+        src: 'logo_tamron.png',
+        alt: 'TAMRON'
+      },
+      {
+        src: 'logo_vanguard.png',
+        alt: 'VANGUARD'
+      }
+    ]
   }
 });
