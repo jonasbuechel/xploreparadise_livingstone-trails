@@ -1,32 +1,17 @@
 import Ember from 'ember';
+import mixinRouteEquipmentSlider from '../mixins/route-equipment-slider';
 
-export default Ember.Route.extend({  
+
+export default Ember.Route.extend(mixinRouteEquipmentSlider, {  
   model(){
     return {
       equipment: {
-        p1: 'Christoph Tänzer operates with gear from',
-        responsiveSettings: [
+        text: [
           {
-            breakpoint:1200,
-            settings:{
-              slidesToShow:4,
-              infinite:true
-            }
-          },
-          {
-            breakpoint:992,
-            settings:{
-              slidesToShow:3,
-              infinite:true
-            }
-          },
-          {
-            breakpoint:768,
-            settings:{
-              slidesToShow:2,
-              dots:true}
+            content:'Christoph Tänzer operates with gear from'
           }
-        ]
+        ],
+        responsiveSettings: this.get('sliderSettings.responsiveSettings')
       }
     };
   }

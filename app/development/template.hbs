@@ -1,7 +1,9 @@
 {{#l-default}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
-    <p>{{model.equipment.p1}}</p>
+    
+    {{c-text-blocks text=model.equipment.text}}
+    
     {{#slick-carousel
       class="ember-carousel"
       autoplay=true
