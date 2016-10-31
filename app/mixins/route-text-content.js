@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Mixin.create({
   textContent: {
     trail: {
-      title: 'ON THE TRAIL OF A LEGEND',
+      h2: 'ON THE TRAIL OF A LEGEND',
       text: [
         {
           content: 'AFRICA, the Cradle of Humanity. A unique continent streaked by a variety of wild landscapes, and home to breath-taking flora and fauna. In recent centuries the continent has played host to all kinds of adventurers and explorers. One of the most famous was an extraordinary man: Dr David Livingstone.' 
@@ -39,7 +39,7 @@ export default Ember.Mixin.create({
       ]
     },
     kalahari: {
-      title: 'THE MIGHTY KALAHARI DESERT',
+      h2: 'THE MIGHTY KALAHARI DESERT',
       text: [
         {
           content: 'There might be no better description of the Kalahari than the words of David Livingstone himself:'
@@ -62,7 +62,7 @@ export default Ember.Mixin.create({
       ]
     },
     work: {
-      title: 'THE WORK',
+      h2: 'THE WORK',
       text: [
         {
           content: 'Discover the story behind every photo in the gallery. (Please note: All pictures are digitally watermarked and restricted for download. If you would like to use one for any purpose or want to buy a numbered print, please use the contact form to get in touch.)'
@@ -89,7 +89,11 @@ export default Ember.Mixin.create({
     },
     thanks: {
       h2: 'SPECIAL THANKS',
-      p1: 'LUCKY GARENAMOTSE & STAFF OF <a title="GIFTS OF THE KALAHARI" target="_blank" href="http://www.giftsofthekalahari.com">GIFTS OF THE KALAHARI</a>, BOTSWANA I GLEN STEPHENS AND TSHEPI GARENAMOTSE OF <a title="LIQUID GIRAFFE" target="_blank" href="http://liquidgiraffe.com">LIQUID GIRAFFE</a> I GAIL AND DOUG & STAFF OF <a title="THE CHUNDUKWA RIVER LODGE" target="_blank" href="http://www.chundukwariverlodge.com">THE CHUNDUKWA RIVER LODGE</a>, ZAMBIA I THE MINISTRY OF ENVIROMENT, WILDLIFE AND TOURISM OF BOTSWANA I THE CHOBE NATIONAL PARK, BOTSWANA I THE CKGR, BOTSWANA I THE MAKADIKADI PANS PARK, BOTSWANA I JANINE AVERY & <a title="AFRICA GEOGRAPHIC" target="_blank" href="http://africageographic.com/">AFRICA GEOGRAPHIC</a> I CHRISTOPH HIRSCHBÜHL & JONAS BÜCHEL I MY FRIENDS & FAMILY'
+      text: [
+        {
+          content: 'LUCKY GARENAMOTSE & STAFF OF <a title="GIFTS OF THE KALAHARI" target="_blank" href="http://www.giftsofthekalahari.com">GIFTS OF THE KALAHARI</a>, BOTSWANA I GLEN STEPHENS AND TSHEPI GARENAMOTSE OF <a title="LIQUID GIRAFFE" target="_blank" href="http://liquidgiraffe.com">LIQUID GIRAFFE</a> I GAIL AND DOUG & STAFF OF <a title="THE CHUNDUKWA RIVER LODGE" target="_blank" href="http://www.chundukwariverlodge.com">THE CHUNDUKWA RIVER LODGE</a>, ZAMBIA I THE MINISTRY OF ENVIROMENT, WILDLIFE AND TOURISM OF BOTSWANA I THE CHOBE NATIONAL PARK, BOTSWANA I THE CKGR, BOTSWANA I THE MAKADIKADI PANS PARK, BOTSWANA I JANINE AVERY & <a title="AFRICA GEOGRAPHIC" target="_blank" href="http://africageographic.com/">AFRICA GEOGRAPHIC</a> I CHRISTOPH HIRSCHBÜHL & JONAS BÜCHEL I MY FRIENDS & FAMILY'
+        }
+      ]
     },
     equipment: {
       text: [
