@@ -1,4 +1,8 @@
 {{#each text as |textItem|}}
-  <p>{{textItem.content}}</p>
+  {{#unless isHTML}}
+    <p>{{textItem.content}}</p>
+  {{else}}
+    <p>{{{textItem.content}}}</p>
+  {{/unless}}
 {{/each}}
 {{yield}}
