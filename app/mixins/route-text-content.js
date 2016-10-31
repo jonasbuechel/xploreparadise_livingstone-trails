@@ -87,6 +87,14 @@ export default Ember.Mixin.create({
         }
       ]
     },
+    contact: {
+      h2: 'GET IN TOUCH',
+      text: [
+        {
+          content: 'For further information, prints or commercial enquiries, please fill out the form bellow.'
+        }
+      ]
+    },
     thanks: {
       h2: 'SPECIAL THANKS',
       text: [

@@ -146,8 +146,11 @@
   {{#c-section 
       isInProgress=true
       isConstrained=true
+      classNames="c-section--text-center"
   }}
-     {{c-contact-form}}
+    <h2>{{model.textContent.contact.h2}}</h2>
+    {{c-text-blocks text=model.textContent.contact.text classNames="spacing-vertical--4lines"}}
+    {{c-contact-form}}
   {{/c-section}}
 
   {{#c-section 
