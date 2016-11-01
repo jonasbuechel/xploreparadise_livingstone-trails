@@ -1,16 +1,16 @@
 <form class="c-contact-form row" {{action "submitContactForm" on="submit"}}>
-    <div class="col-xs-6">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
       {{input value=name placeholder="NAME" required=true classBinding=":c-contact-form__input-text"}}
       {{input value=email placeholder="E-MAIL" required=true classBinding=":c-contact-form__input-text"}}
       {{input value=subject placeholder="SUBJECT" required=true classBinding=":c-contact-form__input-text"}}
     </div>
-    <div class="col-xs-6">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
        {{textarea value=message placeholder="MESSAGE" required=true classBinding=":c-contact-form__input-textarea"}}
     </div>
-    <div class="col-xs-12">
+    <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
         <button class="c-contact-form__submit" type="submit" name="submit" {{action "submitContactForm"}}>SEND EMAIL</button>
     </div>
-    <div class="c-contact-form__feedback col-xs-12">
+    <div class="c-contact-form__feedback col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
       {{#if showError}}
         <p class="c-contact-form__message c-contact-form__message--error">Ooops, sorry! Something went wrong. Please try again later...</p>
       {{/if}}
