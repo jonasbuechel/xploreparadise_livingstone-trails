@@ -1,19 +1,11 @@
 import Ember from 'ember';
+import mixinComponentBackgroundImage from '../../mixins/component-background-image';
 
-export default Ember.Component.extend({
+export default Ember.Component.extend(mixinComponentBackgroundImage,{
   tagName: 'a',
   classNames: ['c-video-teaser'],
-  src: false,
-  srcComplete: 'bla',
   title: false,
   subtitle: false,
-  backgroundimage: false,
-  backgroundStyleCode: Ember.computed('backgroundimage', function(){
-    let backgroundimage = this.get('backgroundimage');
-    if(backgroundimage){
-      return `background-image:url("/assets/${backgroundimage}")`;
-    }
-  }),
   attributeBindings: ['title'],
   click(){
     let youtubeId = this.get('youtubeId');
