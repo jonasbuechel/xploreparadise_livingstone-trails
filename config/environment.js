@@ -53,7 +53,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV["ember-facebook-pixel"] = {
+      id: 'id-of-your-pixel'
+    };
   }
 
   return ENV;
