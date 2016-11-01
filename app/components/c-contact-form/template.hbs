@@ -12,10 +12,13 @@
     </div>
     <div class="c-contact-form__feedback col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0">
       {{#if showError}}
-        <p class="c-contact-form__message c-contact-form__message--error">Ooops, sorry! Something went wrong. Please try again later...</p>
+        <p class="c-contact-form__message c-contact-form__message--error">{{formFeedback.generalError}}</p>
+      {{/if}}
+      {{#if showMissingFields}}
+        <p class="c-contact-form__message c-contact-form__message--error">{{formFeedback.fillOutFields}}</p>
       {{/if}}
       {{#if showSuccess}}
-        <p class="c-contact-form__message c-contact-form__message--success">Thank You! Your email has been delivered.</p>
+        <p class="c-contact-form__message c-contact-form__message--success">{{formFeedback.success}}</p>
       {{/if}}
     </div>
 </form>
