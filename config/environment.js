@@ -30,6 +30,9 @@ module.exports = function(environment) {
       contactForm:{
         endpoint: 'http://www.xploreparadise.com/php/mail.php'
       }
+    },
+    "ember-facebook-pixel":{
+      id: null
     }
   };
 
@@ -53,8 +56,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV["ember-facebook-pixel"] = {
-      id: 'id-of-your-pixel'
+    ENV."ember-facebook-pixel": {
+      id: 433599846841570
     };
   }
 
