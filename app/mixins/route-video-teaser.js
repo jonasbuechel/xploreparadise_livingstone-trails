@@ -3,28 +3,28 @@ import Ember from 'ember';
 export default Ember.Mixin.create({
   videoTeasers: [
     {
-      youtubeId: '6vqFleiDX1A',
-      backgroundimage: 'img_video_cheetahs.jpg',
-      title: 'Cheethas',
-      subtitle: 'With the meercats'
+      youtubeId: '_JpPx0BfaiY',
+      backgroundimage: 'img_video_trailer.jpg',
+      title: 'Official Trailer',
+      subtitle: 'The Livingstone Trails'
     },
     {
-      youtubeId: 'K_MbZ2-UcJM',
+      youtubeId: 'umuCOYMMrJo',
       backgroundimage: 'img_video_meerkats.jpg',
       title: 'The guardian',
-      subtitle: 'With the meercats'
+      subtitle: 'Meet the meerkats'
     },
     {
-      youtubeId: 'GWJ3-gBWFmU',
-      backgroundimage: 'img_video_elephants.jpg',
-      title: 'At the water hole',
-      subtitle: 'Cheethas'
+      youtubeId: 'inxDUCI8A2c',
+      backgroundimage: 'img_video_tsodilohills.jpg',
+      title: 'Sacred hills',
+      subtitle: 'Tsodilo Hills & the San people'
     },
     {
-      youtubeId: 'OLsjeRDvjnk',
-      backgroundimage: 'img_video_springboks.jpg',
-      title: 'At the water hole',
-      subtitle: 'Cheethas'
+      youtubeId: 'GVr7YjExYQs',
+      backgroundimage: 'img_video_cheetahs.jpg',
+      title: 'Hunters',
+      subtitle: 'Observing a cheetah'
     }
   ]
 });
