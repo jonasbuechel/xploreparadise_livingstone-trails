@@ -50,6 +50,7 @@
     "ember-facebook-pixel": "0.1.0",
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
+    "ember-scroll-to": "0.5.4",
     "ember-youtube": "0.7.0",
     "loader.js": "^4.0.1"
   }
