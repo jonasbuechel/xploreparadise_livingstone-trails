@@ -2,6 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Mixin.create({
   textContent: {
+    start: {
+      h1: '#XPLOREPARADISE',
+      text: [
+        {
+          content: 'Welcome to Xploreparadise. Experience an amazing adventure, following the footsteps, of David Livingstone.'
+        }
+      ]
+    },
     trail: {
       h2: 'ON THE TRAIL OF A LEGEND',
       text: [

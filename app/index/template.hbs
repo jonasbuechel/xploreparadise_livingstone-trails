@@ -6,15 +6,24 @@
     videoId = videoId
   }}
 
-  {{#c-video classNames="c-video--fullpage"}}
-    {{ember-youtube
-      ytid="V2VkGY-DMKE"
-      playerVars=youtubeIntroPlayerVars
-      showDebug=false
-      showControls=false
-      showProgress=false
-    }}
-  {{/c-video}}
+  {{#c-section 
+    classNames="c-section--text-center spacing--min-height-100vh c-section--background-cover c-section--background-center-top  c-alignement--center-center c-alignement--column" 
+    isConstrained=false
+    backgroundimage="img_main_xploreparadise_kalahari_botswana_livingstone.jpg"
+  }}
+    <h1>{{model.textContent.start.h1}}</h1>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2">{{c-text-blocks text=model.textContent.start.text classNames="typography--big"}}</div>
+    </div>
+    <div class="spacing-top--2lines">
+      <a>
+        START
+        {{c-image
+          src="ico_arrow_down.svg"
+        }}
+      </a>
+    </div>
+  {{/c-section}}
 
   {{c-separator isBig=true isDark=true}}
 
