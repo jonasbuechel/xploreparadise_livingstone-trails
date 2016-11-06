@@ -39,6 +39,10 @@
   &-bottom{
      @include generate-spaces-bottom;
   }
+  
+  &-top{
+     @include generate-spaces-top;
+  }
 }
 
 .spacing--min-height{
