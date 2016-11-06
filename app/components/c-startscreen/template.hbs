@@ -1,0 +1,23 @@
+<h1>{{text.h1}}</h1>
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    {{c-text-blocks text=text.text classNames="typography--big"}}
+    {{yield}}
+  </div>
+</div>
+<div class="c-startscreen__link">
+  {{#scroll-to 
+     href='.scroll-to--start'
+     duration=1000
+     easing='swing'
+     offset=0
+     classNames="typography--big"
+    }}
+    <div class="c-startscreen__link-text">START</div>
+    {{c-image
+      classNames="c-startscreen__down-icon"
+      src="ico_arrow_down.svg"
+    }}
+  {{/scroll-to}}
+</div>
+
