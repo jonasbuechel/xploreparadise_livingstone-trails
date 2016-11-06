@@ -13,10 +13,28 @@
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center; 
+  
+}
+
+@mixin c-alignement--column{
+  flex-direction: column;
+}
+
+
+@mixin c-alignement--row{
+  flex-direction: row;
 }
 
 .c-alignement{
   &--center-center{
-    @include c-alignement--center-center
+    @include c-alignement--center-center;
+  }
+  
+  &--row{
+    @include c-alignement--row;
+  }
+  
+  &--column{
+    @include c-alignement--column;
   }
 }
