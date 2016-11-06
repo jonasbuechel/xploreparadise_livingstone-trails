@@ -60,6 +60,40 @@ h4{
   }
 }
 
+.typography{
+  &--smallest{ 
+    font-size:0.5em; 
+    font-size:0.5em;
+  }
+  &--smaller{
+    font-size:0.75em;
+  }
+  &--big{
+    font-size: 1.25em;
+    @media #{$media-sm-up} {
+      font-size:1.5em;
+    }
+  }
+  &--bigger{
+    font-size:1.33em;
+    @media #{$media-sm-up} {
+      font-size:1.75em;
+    }
+  }
+  &--extrabig{
+    font-size:1.5em;
+    @media #{$media-sm-up} {
+      font-size:2em;
+    }
+  }
+  &--huge{
+    font-size:2em;
+    @media #{$media-sm-up} {
+      font-size:3em;
+    }
+  }
+}
+
 /* STYLES */
 h1,h2,h3,h4,*{
   &.c-typography{
