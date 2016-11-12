@@ -1,4 +1,6 @@
 .c-section{
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .c-section--text-center{
@@ -6,10 +8,7 @@
 }
 
 .c-section--in-progress{
-  margin-top: 2em;
-  margin-bottom: 2em;
-  padding-top: 2em;
-  padding-bottom: 2em;
+ 
   border: 1px dashed $color-bright;
 }
 
