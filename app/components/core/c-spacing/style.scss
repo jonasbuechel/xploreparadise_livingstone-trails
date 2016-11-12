@@ -24,6 +24,32 @@
   &--10lines{ margin-top:10em;}
 }
 
+@mixin generate-spaces-bottom-inside {
+  &--1line{  padding-bottom:1em;}
+  &--2lines{ padding-bottom:2em;}
+  &--3lines{ padding-bottom:3em;}
+  &--4lines{ padding-bottom:4em;}
+  &--5lines{ padding-bottom:5em;}
+  &--6lines{ padding-bottom:6em;}
+  &--7lines{ padding-bottom:7em;}
+  &--8lines{ padding-bottom:8em;}
+  &--9lines{ padding-bottom:9em;}
+  &--10lines{ padding-bottom:10em;}
+}
+
+@mixin generate-spaces-top-inside {
+  &--1line{  padding-top:1em;}
+  &--2lines{ padding-top:2em;}
+  &--3lines{ padding-top:3em;}
+  &--4lines{ padding-top:4em;}
+  &--5lines{ padding-top:5em;}
+  &--6lines{ padding-top:6em;}
+  &--7lines{ padding-top:7em;}
+  &--8lines{ padding-top:8em;}
+  &--9lines{ padding-top:9em;}
+  &--10lines{ padding-top:10em;}
+}
+
 .spacing{
   &-vertical{
     &--grid-gutter{
@@ -33,15 +59,28 @@
     
     @include generate-spaces-top;
     @include generate-spaces-bottom;
+    
+    &-inside{
+      @include generate-spaces-bottom-inside
+      @include generate-spaces-top-inside
+    }
    
   }
   
   &-bottom{
      @include generate-spaces-bottom;
+     
+    &-inside{
+      @include generate-spaces-bottom-inside
+    }
   }
-  
+      
   &-top{
-     @include generate-spaces-top;
+    @include generate-spaces-top;
+    
+    &-inside{
+      @include generate-spaces-top-inside
+    }
   }
 }
 
