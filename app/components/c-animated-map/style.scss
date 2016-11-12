@@ -1,0 +1,15 @@
+.c-animated-map{
+  position: relative;
+  
+  &__map{
+    
+  }
+  
+  &__path{
+    position: absolute;
+    top:14%;
+    left:39%;
+    width:23%;
+    height: auto;
+  }
+}
