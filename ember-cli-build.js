@@ -6,6 +6,11 @@ module.exports = function(defaults) {
   var app = new EmberApp(defaults, {
     sassOptions: {
       includePaths: ['app']
+    },
+    svg: {
+      paths: [
+        'public/assets'
+      ]
     }
   });
 
