@@ -1,24 +1,9 @@
 {{#l-default}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="" isConstrained=true isInProgress=true}}
     
-    {{c-text-blocks text=model.textContent.equipment.text}}
+    {{c-animated-map}}
     
-    {{#slick-carousel
-      class="slick-carousel slick-carousel--center-center spacing-vertical--2lines"
-      autoplay=true
-      autoplaySpeed=3000
-      slidesToScroll=1
-      dots=false
-      fade=false
-      mobileFirst=true
-      responsive=model.equipmentSlider.sliderSettings.responsiveSettings
-      
-    }}
-      {{#each model.equipmentSlider.sliderItems as |item|}}
-        {{c-carousel-item item=item}}
-      {{/each}}
-    {{/slick-carousel}}
   {{/c-section}}
 
 {{/l-default}}
