@@ -17,10 +17,10 @@ export default Ember.Mixin.create({
           content: 'AFRICA, the Cradle of Humanity. A unique continent streaked by a variety of wild landscapes, and home to breath-taking flora and fauna. In recent centuries the continent has played host to all kinds of adventurers and explorers. One of the most famous was an extraordinary man: Dr David Livingstone.' 
         },
         {
-          content: 'Inspired by Livingstone’s records of his explorations through Africa, Christoph Tänzer started a fantastic journey of 2,500 km with his Botswanan friend and guide, Lucky Garenamotse. Equipped with five cameras, they followed Livingstone’s footsteps from the Kalahari Desert in Botswana to the city which now bears his name: Livingstone, Zambia.'
+          content: 'Inspired by Livingstone’s records of his explorations through Africa, I started a fantastic journey of 2,500 km with my Botswanan friend and guide, Lucky Garenamotse. Equipped with five cameras, we followed Livingstone’s footsteps from the Kalahari Desert in Botswana to the city which now bears his name: Livingstone, Zambia.'
         },
         {
-          content: 'After experiencing sub-zero temperatures during the night and close encounters with predators, Christoph began to understand the exertion and hardships Livingstone and his men had suffered, along with their irrepressible will and motivation.'
+          content: 'After experiencing sub-zero temperatures during the night and close encounters with predators, I began to understand the exertion and hardships Livingstone and his men had suffered, along with their irrepressible will and motivation.'
         },
         {
           content: 'The following sections will lead you through an extraordinary adventure and give you a deeper insight into the life of David Livingstone, the mighty Kalahari Desert and its extraordinary wildlife.'
@@ -73,7 +73,7 @@ export default Ember.Mixin.create({
       h2: 'THE WORK',
       text: [
         {
-          content: 'Discover the story behind every photo in the gallery and on social media. (Please note: All pictures are digitally. If you would like to use one for any purpose or want to buy a numbered print, please use the contact form to get in touch.)'
+          content: 'Discover the story behind every photo in the gallery and on social media. (Please note: All pictures are digitally watermarked. If you would like to use one for any purpose or want to buy a numbered print, please use the contact form to get in touch.)'
         },
         {
           content: 'Follow Xploreparadise on Instagram and Facebook and discover the story behind the images, what happened each day of my adventure and learn some interesting facts about David Livingstone and the Kalahari wildlife.'
@@ -99,7 +99,7 @@ export default Ember.Mixin.create({
       h2: 'GET IN TOUCH',
       text: [
         {
-          content: 'For further information, prints, commercial or speaker enquiries, please fill out the form below and submit it. We will then get back to you immediately.'
+          content: 'For further information, prints, commercial or speaker enquiries, please fill out the form below and submit it. I will then get back to you immediately.'
         }
       ]
     },

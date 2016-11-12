@@ -24,7 +24,7 @@ export default Ember.Mixin.create({
       youtubeId: 'GVr7YjExYQs',
       backgroundimage: 'img_video_cheetahs.jpg',
       title: 'Hunters',
-      subtitle: 'Observing a cheetah'
+      subtitle: 'Observing cheetahs'
     }
   ]
 });

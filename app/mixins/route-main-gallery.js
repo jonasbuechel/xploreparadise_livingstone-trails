@@ -76,7 +76,7 @@ export default Ember.Mixin.create({
         {
           msrc:   '/assets/mainGallery/thumbnails/32_xploreparadise_tlt_fb.jpg', 
           src:    '/assets/mainGallery/fullsize/32_xploreparadise_tlt_fb.jpg', 
-          title:  'During the day, a lot of animals approached the watering hole. A group of greater kudus arrived, led by a hugebull. While the females went into the water to drink, he observed the area from a higher elevation to protect his herd.'
+          title:  'During the day, a lot of animals approached the watering hole. A group of greater kudus arrived, led by a huge bull. While the females went into the water to drink, he observed the area from a higher elevation to protect his herd.'
         },
         {
           msrc:   '/assets/mainGallery/thumbnails/33_xploreparadise_tlt_fb.jpg', 
@@ -86,7 +86,7 @@ export default Ember.Mixin.create({
                 {
           msrc:   '/assets/mainGallery/thumbnails/43_xploreparadise_tlt_fb.jpg', 
           src:    '/assets/mainGallery/fullsize/43_xploreparadise_tlt_fb.jpg', 
-          title:  'After about 30 minutes’ sustained digging, this pup retreated back into the shadows next to the entrance of a burrow and took a short break. But it was not long before it started digging again.'
+          title:  'After about 30 minutes sustained digging, this pup retreated back into the shadows next to the entrance of a burrow and took a short break. But it was not long before it started digging again.'
         },
         {
           msrc:   '/assets/mainGallery/thumbnails/46_xploreparadise_tlt_fb.jpg', 
