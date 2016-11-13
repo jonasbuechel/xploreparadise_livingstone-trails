@@ -1,26 +1,26 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 180.5">
     <title>Artboard 1</title>
-    <path class="c-animated-map__route c-animated-map__route--1" d="M111.72,166.14c5.29-4.24,11.06-10.86,6-17" />
-    <path class="c-animated-map__route c-animated-map__route--2" d="M106.34,142.76C90.68,139.23,71,149.49,55,145.62" />
-    <path class="c-animated-map__route c-animated-map__route--3" d="M43.56,139.94c-15.75-11.7-30-37.62-31.86-62.43" />
-    <path class="c-animated-map__route c-animated-map__route--4" d="M11.57,65.15c.44-20.55,3-25.23,9.46-36.54" />
-    <path class="c-animated-map__route c-animated-map__route--5" d="M29.19,22.25c11.26,5.15,31.74,45,53.07,29.21" />
-    <path class="c-animated-map__route c-animated-map__route--6" d="M91,43.08c17.29-17.14,31.54-26.64,38.45-30.75" />
+	<path class="c-animated-map__route c-animated-map__route--1" d="M79.3,53.9c17.3-17.1,43.3-37.5,50.2-41.6"/>
+	<path class="c-animated-map__route c-animated-map__route--2" d="M29.2,22.2c11.3,5.1,31.7,45,53.1,29.2"/>
+	<path class="c-animated-map__route c-animated-map__route--3" d="M11.6,65.2c0.4-20.5,3-25.2,9.5-36.5"/>
+	<path class="c-animated-map__route c-animated-map__route--4" d="M55,145.6c-22.2-11.1-42.6-52.3-44.5-77.1"/>
+	<path class="c-animated-map__route c-animated-map__route--4" d="M117.7,149.1c-17-17.9-46.7,0.4-62.7-3.5"/>
+    <path class="c-animated-map__route c-animated-map__route--4" d="M111.7,166.1c5.3-4.2,11.1-10.9,6-17"/>
     <g id="Layer_3" data-name="Layer 3">
         <!-- WAYPOINT 1 -->
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--1" cx="130" cy="10.98" r="9.11" />
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--1" cx="130" cy="10.98" r="6.26" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--1" cx="130" cy="11" r="9.1" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--1" cx="130" cy="11" r="6.3" />
         <!-- WAYPOINT 2 -->
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--2" cx="73.15" cy="55.19" r="9.11" />
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--2" cx="73.15" cy="55.19" r="6.26" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--2" cx="73.2" cy="55.2" r="9.1" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--2" cx="73.2" cy="55.2" r="6.3" />
         <!-- WAYPOINT 3 -->
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--3" cx="26.46" cy="25.09" r="9.11" />
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--3" cx="26.46" cy="25.09" r="6.26" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--3" cx="26.5" cy="25.1" r="9.1" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--3" cx="26.5" cy="25.1" r="6.3" />
        <!-- WAYPOINT 4 -->
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--4" cx="11.7" cy="62.25" r="9.11" />
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--4" cx="11.7" cy="62.25" r="6.26" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--4" cx="11.7" cy="62.2" r="9.1" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--4" cx="11.7" cy="62.2" r="6.3" />
         <!-- WAYPOINT 5 -->
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--5" cx="106.94" cy="168.88" r="9.11" />
-        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--5" cx="106.94" cy="168.88" r="6.26" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--outer c-animated-map__waypoint--5" cx="106.9" cy="168.9" r="9.1" />
+        <circle class="c-animated-map__waypoint c-animated-map__waypoint--inner c-animated-map__waypoint--5" cx="106.9" cy="168.9" r="6.3" />
     </g>
 </svg>
