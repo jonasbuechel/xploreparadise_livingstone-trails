@@ -1,12 +1,5 @@
 $c-animated-item-color: $color-sand;
 
-@keyframes fadeIn {
-    0%    {opacity: 0;}
-    11.1% {opacity: 1;}
-    99.9% {opacity: 1;}
-    100%  {opacity: 0;}
-}
-
 .c-animated-map{
   position: relative;
   
@@ -26,19 +19,14 @@ $c-animated-item-color: $color-sand;
     fill:none;
     stroke: $c-animated-item-color;
     stroke-width: 2px;
-    opacity: 0
+    opacity: 0;
 
-    &--1{stroke-dasharray: 6.67 4.67;}
-    &--2{stroke-dasharray: 6.4 4.4;}
-    &--3{stroke-dasharray: 6.29 4.29;}
-    &--4{stroke-dasharray: 6.05 4.05;}
-    &--5{stroke-dasharray: 5.87 3.87}
-    &--6{stroke-dasharray: 6.14 4.14;}
-    &--7{/*no definition*/}
-      
-    &--1, &--2, &--3{  animation: fadeIn 9s 1s infinite; }
-    &--4{  animation: fadeIn 9s 3s infinite; }
-    &--5{  animation: fadeIn 9s 5s infinite; }
+    stroke-dasharray: 6.35 4.35;
+    
+    /*&--1{ stroke-dasharray: 6.67 4.67; }
+    &--2{ stroke-dasharray: 6.40 4.40; }
+    &--3{ stroke-dasharray: 6.29 4.29; }
+    &--4{ stroke-dasharray: 6.05 4.05; }*/
   }
   
   &__waypoint{
@@ -54,14 +42,30 @@ $c-animated-item-color: $color-sand;
       fill: $c-animated-item-color;
       stroke:none;
     }
-
-    &--1{  animation: fadeIn 9s 0s infinite; }
-    &--2{  animation: fadeIn 9s 2s infinite; }
-    &--3{  animation: fadeIn 9s 4s infinite; }
-    &--4{  animation: fadeIn 9s 6s infinite; }
-    &--5{  animation: fadeIn 9s 8s infinite; }
-    
-
-    
   }
+}
+
+/*******************************************************************
+/ MAP CSS3 ANIMATIONS
+/*******************************************************************/
+
+@keyframes fadeIn {
+    0%    {opacity: 0;}
+    25%   {opacity: 1;}
+    75%   {opacity: 1;}
+    100%  {opacity: 0;}
+}
+
+.c-animated-map{
+
+  &__waypoint--1{ animation: fadeIn 1s 0s normal infinite; }
+  &__route--1{    animation: fadeIn 1s 0s normal infinite; }
+  &__waypoint--2{ animation: fadeIn 1s 0s normal infinite; }
+  &__route--2{    animation: fadeIn 1s 0s normal infinite; }
+  &__waypoint--3{ animation: fadeIn 1s 0s normal infinite; }
+  &__route--3{    animation: fadeIn 1s 0s normal infinite; }
+  &__waypoint--4{ animation: fadeIn 1s 0s normal infinite; }
+  &__route--4{    animation: fadeIn 1s 0s normal infinite; }
+  &__waypoint--5{ animation: fadeIn 1s 0s normal infinite; }
+
 }
