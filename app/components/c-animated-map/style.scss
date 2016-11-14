@@ -56,19 +56,19 @@ $c-animated-item-color: $color-sand;
 @keyframes fadeIn5 { 41% {opacity: 0;} 50% {opacity: 1;} 97% {opacity: 1} 100% {opacity: 0;} }
 @keyframes fadeIn6 { 51% {opacity: 0;} 60% {opacity: 1;} 97% {opacity: 1} 100% {opacity: 0;} }
 @keyframes fadeIn7 { 61% {opacity: 0;} 70% {opacity: 1;} 97% {opacity: 1} 100% {opacity: 0;} }
-@keyframes fadeIn8 { 71% {opacity: 0;} 85% {opacity: 1;} 97% {opacity: 1} 100% {opacity: 0;} }
+@keyframes fadeIn8 { 71% {opacity: 0;} 89% {opacity: 1;} 97% {opacity: 1} 100% {opacity: 0;} }
 @keyframes fadeIn9 { 81% {opacity: 0;} 90% {opacity: 1;} 97% {opacity: 1} 100% {opacity: 0;} }
 
 .c-animated-map{
 
-  &__waypoint--1{ animation: fadeIn1 20s 0s normal infinite; }
-  &__route--1{    animation: fadeIn2 20s 0s normal infinite; }
-  &__waypoint--2{ animation: fadeIn3 20s 0s normal infinite; }
-  &__route--2{    animation: fadeIn4 20s 0s normal infinite; }
-  &__waypoint--3{ animation: fadeIn5 20s 0s normal infinite; }
-  &__route--3{    animation: fadeIn6 20s 0s normal infinite; }
-  &__waypoint--4{ animation: fadeIn7 20s 0s normal infinite; }
-  &__route--4{    animation: fadeIn8 20s 0s normal infinite; }
-  &__waypoint--5{ animation: fadeIn9 20s 0s normal infinite; }
+  &__waypoint--1{ animation: fadeIn1 12s 0s normal infinite; }
+  &__route--1{    animation: fadeIn2 12s 0s normal infinite; }
+  &__waypoint--2{ animation: fadeIn3 12s 0s normal infinite; }
+  &__route--2{    animation: fadeIn4 12s 0s normal infinite; }
+  &__waypoint--3{ animation: fadeIn5 12s 0s normal infinite; }
+  &__route--3{    animation: fadeIn6 12s 0s normal infinite; }
+  &__waypoint--4{ animation: fadeIn7 12s 0s normal infinite; }
+  &__route--4{    animation: fadeIn8 12s 0s normal infinite; }
+  &__waypoint--5{ animation: fadeIn9 12s 0s normal infinite; }
 
 }
