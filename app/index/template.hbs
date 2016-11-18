@@ -51,7 +51,7 @@
     </div>
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true}}
       <h2>{{model.textContent.kalahari.h2}}</h2>
       {{c-separator}}
       {{c-text-blocks text=model.textContent.kalahari.text}}
@@ -69,7 +69,7 @@
     }}
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true}}
     {{c-text-blocks text=model.textContent.kalahariGeographics.text}}
     {{c-image
       src="img_african_symbol.png"
@@ -79,12 +79,12 @@
 
   {{c-separator isBig=true}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true}}
       <h2>{{model.textContent.work.h2}}</h2>
       {{c-text-blocks text=model.textContent.work.text}}
   {{/c-section}}
 
-  {{#c-section isConstrained=true isInProgress=true}}
+  {{#c-section isConstrained=true}}
     <div class="row">
       
       {{#each model.videoTeasers as |video|}}
@@ -101,7 +101,7 @@
     </div>
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true}}
     <div class="row">
       <h2>Photos</h2>
       {{#photo-swipe items=model.mainGallery.items as |img|}}
@@ -115,7 +115,7 @@
     </div>
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true}}
     <h2>{{model.textContent.about.h2}}</h2>
     <h3>{{model.textContent.about.h3}}</h3>
     {{c-text-blocks text=model.textContent.about.text}}
@@ -124,7 +124,6 @@
   {{#c-section 
       classNames="c-section--text-center c-section--background-cover c-section--background-center-top"
       backgroundimage="img_portrait_xploreparadise_christoph_taenzer.jpg"
-      isInProgress=true
       isConstrained=false
   }}
     <div class="container spacing-vertical--8lines">
@@ -138,7 +137,6 @@
   {{/c-section}}
 
   {{#c-section 
-      isInProgress=true
       isConstrained=true
       classNames="c-section--text-center"
   }}
@@ -159,7 +157,7 @@
     {{c-special-thanks model=model}}
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center c-section--font-headings" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center c-section--font-headings" isConstrained=true}}
     {{c-text-blocks text=model.textContent.equipment.text}}
     {{#slick-carousel
       class="slick-carousel slick-carousel--center-center spacing-vertical--2lines"
@@ -178,7 +176,7 @@
   {{/c-section}}
   
   <footer>
-  {{#c-section classNames="c-section--text-center" isConstrained=true isInProgress=true}}
+  {{#c-section classNames="c-section--text-center" isConstrained=true}}
      {{c-text-blocks text=model.textContent.copyright.text}}
   {{/c-section}}
   </footer>
