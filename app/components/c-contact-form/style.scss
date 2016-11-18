@@ -26,18 +26,17 @@ $c-contact-form-textarea-height: (3*$c-contact-form-element-height) + (2*$c-cont
     height: $c-contact-form-textarea-height;
   }
   &__submit{
-    background: $color-sand-bright;
+    background: $color-sand;
     color:$color-dark;
-    border: 2px solid $color-sand;
+    border:none;
     width: $c-contact-form-element-width;
     height: $c-contact-form-element-height;
     padding: $c-contact-form-element-spacing-inside;
     margin-bottom: $c-contact-form-element-spacing-bottom;
         
     &:hover{
-      background: $color-sand;
-      color:$color-sand-bright;
-      border-color: $color-sand-bright;
+      background: $color-soil;
+      color:$color-sand;
     }
   }
   
