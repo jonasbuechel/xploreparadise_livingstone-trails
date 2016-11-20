@@ -9,7 +9,8 @@ export default Ember.Route.extend(mixinRouteMainGallery,mixinRouteEquipmentSlide
 
     return {
       mainGallery: {
-        items: this.get('mainGalleryItems')
+        items: this.get('mainGalleryItems'),
+        options: this.get('mainGalleryOptions')
       },
       textContent: this.get('textContent'),
       videoTeasers: this.get('videoTeasers'),

@@ -1,6 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Mixin.create({
+  //Documentation: http://photoswipe.com/documentation/options.html
+  mainGalleryOptions: {
+    shareButtons: [
+      {id:'facebook', label:'Share on Facebook', url:'https://www.facebook.com/sharer/sharer.php?u={{url}}'},
+      {id:'twitter', label:'Tweet', url:'https://twitter.com/intent/tweet?text={{text}}&url={{url}}'}
+    ]
+  },
   mainGalleryItems: Ember.computed(function() {
 
     let   imagesToReturn              = [];
