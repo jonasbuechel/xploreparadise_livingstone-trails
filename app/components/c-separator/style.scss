@@ -3,6 +3,10 @@
   height: 0;
   width: 3em;
   border-top: solid 2px $color-grey;
+  
+  &--nomargin{
+    margin: 0 auto;
+  }
 }
 
 .c-separator--big{

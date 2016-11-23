@@ -11,6 +11,8 @@ body{
   font-size: 17px;
   line-height: 1.29;
   font-family: $font-primary;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -24,6 +26,11 @@ a{
 
 h1, h2, h3, h4, h5, h6{
   font-family: $font-headings ;
+  
+  &.font--primary{
+    font-family: $font-primary;
+    font-weight: 500;
+  }
 }
 
 h1{
@@ -48,7 +55,7 @@ h3{
   font-size:1.25rem;
   
   @media #{$media-sm-up} {
-    font-size: 2.5rem;  
+    font-size: 2rem;  
   }
 }
 

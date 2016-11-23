@@ -14,7 +14,7 @@ module.exports = function(environment) {
     },
     
     googleFonts: [
-      'Raleway:400',
+      'Raleway:400,500',
       'Oswald:400',
       'Ruthie:400'
     ],
