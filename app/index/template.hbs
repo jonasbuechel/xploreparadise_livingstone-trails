@@ -29,7 +29,7 @@
 
 
   {{#c-section 
-      classNames="c-section--background-contain c-section--background-right-top"
+      classNames="c-section--background-contain c-section--background-right-top spacing-bottom--4lines"
       backgroundimage="img_portrait_xploreparadise_livingstone.jpg"
       isConstrained=false
   }}
@@ -51,7 +51,9 @@
     </div>
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true}}
+  {{c-separator isBig=true isDark=true classNames="scroll-to--start c-separator--nomargin"}}
+
+  {{#c-section classNames="c-section--text-center spacing-vertical--3lines" isConstrained=true}}
       <h2>{{model.textContent.kalahari.h2}}</h2>
       {{c-separator}}
       {{c-text-blocks text=model.textContent.kalahari.text}}
@@ -70,7 +72,7 @@
   {{/c-section}}
 
   {{#c-section classNames="c-section--text-center" isConstrained=true}}
-    {{c-text-blocks text=model.textContent.kalahariGeographics.text}}
+    {{c-text-blocks text=model.textContent.kalahariGeographics.text classNames="spacing-top--4lines"}}
     {{c-image
       src="img_african_symbol.png"
       is2x=true
@@ -81,6 +83,7 @@
 
   {{#c-section classNames="c-section--text-center" isConstrained=true}}
       <h2>{{model.textContent.work.h2}}</h2>
+      {{c-separator}}
       {{c-text-blocks text=model.textContent.work.text}}
   {{/c-section}}
 
@@ -114,8 +117,9 @@
     </div>
   {{/c-section}}
 
-  {{#c-section classNames="c-section--text-center" isConstrained=true}}
+  {{#c-section classNames="c-section--text-center spacing-bottom--4lines" isConstrained=true}}
     <h2>{{model.textContent.about.h2}}</h2>
+    {{c-separator}}
     <h3>{{model.textContent.about.h3}}</h3>
     {{c-text-blocks text=model.textContent.about.text}}
   {{/c-section}}
@@ -137,10 +141,11 @@
 
   {{#c-section 
       isConstrained=true
-      classNames="c-section--text-center"
+      classNames="c-section--text-center spacing-vertical--4lines"
   }}
     <h2>{{model.textContent.contact.h2}}</h2>
-    {{c-text-blocks text=model.textContent.contact.text classNames="spacing-vertical--4lines"}}
+    {{c-separator}}
+    {{c-text-blocks text=model.textContent.contact.text classNames="spacing-bottom--4lines"}}
     {{c-contact-form}}
   {{/c-section}}
 
