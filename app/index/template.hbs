@@ -103,7 +103,6 @@
 
   {{#c-section classNames="c-section--text-center" isConstrained=true}}
     <div class="row">
-      <h2>Photos</h2>
       {{#photo-swipe options=model.mainGallery.options items=model.mainGallery.items as |img|}}
         <img 
           width=200 
@@ -126,10 +125,10 @@
       backgroundimage="img_portrait_xploreparadise_christoph_taenzer.jpg"
       isConstrained=false
   }}
-    <div class="container spacing-vertical--8lines">
+    <div class="container spacing-vertical--6lines">
       <div class="row">
         <div 
-           class="c-typography--italic col-xs-12 col-md-8 col-md-offset-2 col-lg-4 col-lg-offset-8">
+           class="c-typography--italic typography--big col-xs-12 col-md-8 col-md-offset-2 col-lg-5 col-lg-offset-7">
           {{c-text-blocks text=model.textContent.about.text2}}
         </div>
       </div>

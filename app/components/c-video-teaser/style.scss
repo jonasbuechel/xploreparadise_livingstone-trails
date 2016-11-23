@@ -10,6 +10,7 @@
     position: relative;
     background-size: cover;
     background-position: center top;
+    background-repeat: no-repeat;
     min-height: 11em;
     color: $color-bright;
   }
@@ -25,6 +26,7 @@
   
   &__title{
     font-size: 1.8rem;
+    font-weight:400;
     margin: 0;
     padding: 0;
     text-transform: uppercase;

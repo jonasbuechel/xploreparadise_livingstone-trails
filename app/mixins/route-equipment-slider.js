@@ -32,6 +32,10 @@ export default Ember.Mixin.create({
     },
     sliderItems: [
       {
+        src: 'logo_dji.png',
+        alt: 'DJI'
+      },
+      {
         src: 'logo_blackmagic.png',
         alt: 'Blackmagicdesign'
       },

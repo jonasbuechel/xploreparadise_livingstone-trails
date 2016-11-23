@@ -5,17 +5,17 @@
   border:none;
 
   &__paragraph{
-    font-family: $font-handwritten;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
   }
   
   &__author{
+    padding-top:1em;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
   }
   
   &__author-description{
-    font-size: 0.66em;
+    font-size: 1em;
   }
 }
