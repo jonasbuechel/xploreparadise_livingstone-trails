@@ -23,6 +23,7 @@ a{
   }
   
   &:focus{
+    color:$color-sand;
     outline: none;
     text-decoration: none;
   }
