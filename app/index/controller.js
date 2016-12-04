@@ -9,8 +9,16 @@ export default Ember.Controller.extend({
   videoId: undefined,
   actions: {
     openYouTubeModal(youtubeId){
-      this.set('videoId', youtubeId)
-      this.set('showVideoModal', true);
+      const isSmartphone = this.get('media.isXs');
+      
+      if(isSmartphone === true){
+        const youtubeUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
+        window.open(youtubeUrl);
+      } else {
+        this.set('videoId', youtubeId)
+        this.set('showVideoModal', true);
+      }
+      
     }
   },
 });
