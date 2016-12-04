@@ -7,6 +7,7 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
   isConstrained: false,
   isConstrainedInside: false,
   isInProgress: false,
+  parallaxBackgroundRatio: false,
   classNameBindings: ['isInProgress:c-section--in-progress', 'isConstrained:container'],
-  attributeBindings: ['backgroundStyleCode:style']
+  attributeBindings: ['backgroundStyleCode:style','parallaxBackgroundRatio:data-stellar-background-ratio']
 });
