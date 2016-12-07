@@ -2,6 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   didInsertElement(){
-    $.stellar();
+    $.stellar({
+      horizontalScrolling: false,
+      verticalScrolling: true,
+      responsive: true
+    });
   }
 });
