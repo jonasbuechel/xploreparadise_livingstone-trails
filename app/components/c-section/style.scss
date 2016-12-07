@@ -21,6 +21,28 @@
   font-family: $font-headings;
 }
 
+.c-section--background-parallax-50{
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.c-section--background-parallax-75{
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.c-section--background-parallax-125{
+  background-position: center top;
+  background-size: 125%;
+}
+
+.c-section--background-parallax-150{
+  background-position: center top;
+  background-size: 150%;
+}
+
 .c-section--background-contain{
   background-size: contain;
 }
