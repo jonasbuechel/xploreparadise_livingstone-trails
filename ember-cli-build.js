@@ -29,6 +29,7 @@ module.exports = function(defaults) {
   
   app.import("bower_components/jquery-migrate/index.js");
   app.import("bower_components/jquery.stellar/jquery.stellar.min.js");
+  app.import("bower_components/parallax.js/parallax.min.js");
 
   return app.toTree();
 };
