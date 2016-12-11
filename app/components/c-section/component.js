@@ -8,32 +8,33 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
   isConstrainedInside: false,
   isInProgress: false,
   isParallax: false,
-  isParallaxEnabled: Ember.computed(function(){
-    const isSmartphone = this.get('media.isXs');
-    if(isSmartphone === true){
+  _isParallaxEnabled: function(){
+    if(this.get('media.isXs') === true){
       return false;
     } else {
       return this.get('isParallax');
     }
-  }),
+  },
   classNameBindings: [
     'isInProgress:c-section--in-progress',
     'isConstrained:container'
   ],
   _setBackground: function(){
     const backgroundImage = this.get('backgroundImagePath');
+    const isParallaxEnabled = this._isParallaxEnabled();
 
     if(backgroundImage !== undefined){
       const $element = $(this.element);
       
-      if(this.get('isParallaxEnabled') === true){
+      if(isParallaxEnabled === true){
+        this.element.style.backgroundImage = 'none';
         $element.parallax({
           imageSrc: this.get('backgroundImagePath')
         });
       } else {
         //Destroy parallax, if previous instance exists
         if($element.data('px.parallax')){
-          $element.parallay('destroy');
+          $element.parallax('destroy');
         }
         //Set Background
         this.element.style.backgroundImage  = `url("${this.get('backgroundImagePath')}")`;
@@ -42,5 +43,11 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
   },
   didInsertElement(){
     this._setBackground();
+  },
+  init() {
+    this._super(...arguments);
+    this.get('resizeService').on('debouncedDidResize', event => {
+      this._setBackground();
+    })
   }
 });
