@@ -2,6 +2,10 @@ html{
   background: $color-dark;
 }
 
+body{
+  background: transparent; /* needed for parallax.js */
+}
+
 a:hover{
   cursor: pointer;
 }
