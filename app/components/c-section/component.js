@@ -8,31 +8,39 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
   isConstrainedInside: false,
   isInProgress: false,
   isParallax: false,
-  parallax: Ember.computed('isParallax',function(){
-    if(this.get('isParallax') === true){
-      return 'scroll';
-    } else {
+  isParallaxEnabled: Ember.computed(function(){
+    const isSmartphone = this.get('media.isXs');
+    if(isSmartphone === true){
       return false;
+    } else {
+      return this.get('isParallax');
     }
   }),
   classNameBindings: [
     'isInProgress:c-section--in-progress',
-    'isConstrained:container',
-    'isParallax:parallax-window'
+    'isConstrained:container'
   ],
-  attributeBindings: [
-    'backgroundStyleCode:style',
-    'backgroundImagePath:data-image-src',
-    'parallax:data-parallax'
-  ],
-  didInsertElement(){
-    const isSmartphone = this.get('media.isXs');
+  _setBackground: function(){
+    const backgroundImage = this.get('backgroundImagePath');
 
-    if(isSmartphone === false && this.get('isParallax') === true){
-      console.log('insert2');
-      $(this.element).parallax({
-        imageSrc: this.get('backgroundImagePath')
-      });
+    if(backgroundImage !== undefined){
+      const $element = $(this.element);
+      
+      if(this.get('isParallaxEnabled') === true){
+        $element.parallax({
+          imageSrc: this.get('backgroundImagePath')
+        });
+      } else {
+        //Destroy parallax, if previous instance exists
+        if($element.data('px.parallax')){
+          $element.parallay('destroy');
+        }
+        //Set Background
+        this.element.style.backgroundImage  = `url("${this.get('backgroundImagePath')}")`;
+      }
     }
+  },
+  didInsertElement(){
+    this._setBackground();
   }
 });
