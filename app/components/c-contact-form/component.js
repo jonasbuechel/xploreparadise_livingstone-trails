@@ -19,7 +19,7 @@ export default Ember.Component.extend(mixinContactFormText,{
       return true;
     }
       
-    return false
+    return false;
   }),
   hasMissingFields: Ember.computed('name','email','subject','message',function(){
     let fieldsMissed = !this.get('name') || !this.get('email') || !this.get('subject') || !this.get('message');
