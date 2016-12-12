@@ -7,6 +7,11 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
   title: false,
   subtitle: false,
   attributeBindings: ['title'],
+  didInsertElement(){
+    const backgroundContainer = this.element.querySelector('.c-video-teaser__background');
+
+    backgroundContainer.style.backgroundImage = `url("${this.get('backgroundImagePath')}")`;
+  },
   click(){
     let youtubeId = this.get('youtubeId');
     this.get('showVideo')(youtubeId);
