@@ -24,7 +24,7 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
     const isParallaxEnabled = this._isParallaxEnabled();
 
     if(backgroundImage !== undefined){
-      const $element = $(this.element);
+      const $element = Ember.$(this.element);
       
       if(isParallaxEnabled === true){
         this.element.style.backgroundImage = 'none';
@@ -46,8 +46,8 @@ export default Ember.Component.extend(mixinComponentBackgroundImage,{
   },
   init() {
     this._super(...arguments);
-    this.get('resizeService').on('debouncedDidResize', event => {
+    this.get('resizeService').on('debouncedDidResize', () => {
       this._setBackground();
-    })
+    });
   }
 });
