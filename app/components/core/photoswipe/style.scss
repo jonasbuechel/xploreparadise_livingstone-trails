@@ -1,5 +1,9 @@
 /* OVERWRITE SOME PHOTOSWIPE DEFAULT DEFINITIONS */
 
+.pswp--open{
+  z-index: 1100000;
+}
+
 .pswp__caption__center{
   max-width: 90%;
   text-align: center;
