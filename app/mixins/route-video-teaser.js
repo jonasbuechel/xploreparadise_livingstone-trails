@@ -9,7 +9,7 @@ export default Ember.Mixin.create({
       subtitle: 'The Livingstone Trails'
     },
     {
-      youtubeId: 'umuCOYMMrJo',
+      youtubeId: 'V-SfGL7Sid0',
       backgroundimage: 'img_video_meerkats.jpg',
       title: 'The guardian',
       subtitle: 'Meet the meerkats'
@@ -21,10 +21,10 @@ export default Ember.Mixin.create({
       subtitle: 'Tsodilo Hills & the San people'
     },
     {
-      youtubeId: 'GVr7YjExYQs',
+      youtubeId: 'KxVnA_gGuA4',
       backgroundimage: 'img_video_cheetahs.jpg',
       title: 'Hunters',
-      subtitle: 'Observing cheetahs'
+      subtitle: 'Observing a cheetah'
     }
   ]
 });
