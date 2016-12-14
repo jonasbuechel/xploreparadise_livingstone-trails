@@ -5,5 +5,9 @@
     height: auto;
     margin:2em 0.5em 0;
     
+    &:hover *{
+      fill: $color-soil;
+    }
+    
   }
 }
