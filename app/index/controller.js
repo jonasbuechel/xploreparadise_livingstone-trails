@@ -15,7 +15,7 @@ export default Ember.Controller.extend({
         const youtubeUrl = `https://www.youtube.com/watch?v=${youtubeId}`;
         window.open(youtubeUrl);
       } else {
-        this.set('videoId', youtubeId)
+        this.set('videoId', youtubeId);
         this.set('showVideoModal', true);
       }
       
