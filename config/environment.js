@@ -65,6 +65,8 @@ module.exports = function(environment) {
     ENV["ember-facebook-pixel"] = {
       id: 433599846841570
     };
+    
+    ENV["rootURL"] = '/the-livingstone-trails/';
   }
 
   return ENV;
