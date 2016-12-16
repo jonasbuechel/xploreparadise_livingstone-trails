@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Ember.Mixin.create({
   backgroundimage: false,
@@ -10,7 +11,7 @@ export default Ember.Mixin.create({
   backgroundImagePath: Ember.computed('backgroundimage', function(){
     let backgroundimage = this.get('backgroundimage');
     if(backgroundimage){
-      return `/assets/${backgroundimage}`;
+      return `${config.rootURL}assets/${backgroundimage}`;
     }
   })
 });

@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import config from '../../config/environment';
 
 export default Ember.Component.extend({
   tagName: "picture",
@@ -8,7 +9,7 @@ export default Ember.Component.extend({
   src:false,
   srcComplete: Ember.computed('src', function(){
     let imgSrc = this.get('src');
-    return `/assets/${imgSrc}`;
+    return `${config.rootURL}assets/${imgSrc}`;
   }),
   attributeBindings: ['srcComplete:src'],
   classNameBindings:['is2x:c-image--2x']
